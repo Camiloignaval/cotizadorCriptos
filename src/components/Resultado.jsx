@@ -155,7 +155,7 @@ export const Resultado = ({ resultado: res }) => {
 							</Acordion>
 						</div>
 					</div>
-					<div className='imgLogo col text-center animate__animated animate__fadeIn'>
+					<div className='imgLogo col mt-4 mt-md-0 text-center animate__animated animate__fadeIn'>
 						<ImgCripto
 							src={"https://www.cryptocompare.com/" + res.IMAGEURL}
 							alt=''

@@ -2,7 +2,6 @@ import React from "react";
 import styled from "@emotion/styled";
 import { gsap } from "gsap";
 import { useEffect } from "react";
-import { css } from "@emotion/react";
 
 const ImgCripto = styled.img`
 	color: white;
@@ -37,43 +36,25 @@ const Button = styled.button`
 		color: black !important;
 	}
 `;
-const override = css`
-	display: block;
-	margin: 10px auto;
-	margin-top: 50px;
-`;
 
 export const Resultado = ({ resultado: res }) => {
-	useEffect(() => {
-		gsap.registerPlugin(ScrollTrigger);
+	// useEffect(() => {
+	// 	const tl = gsap.timeline();
 
-		const tl = gsap.timeline();
-
-		tl./* from(".imgLogo", {
-			x: 0,
-			duration: 1,
-			opacity: 0,
-		}). */ from(
-			".accordion",
-			{
-				duration: 1,
-				opacity: 0,
-			},
-			"<",
-		);
-
-		gsap.from(".imgLogo", {
-			scrollTrigger: {
-				trigger: ".imgLogo",
-				toggleActions: "restart pause reverse pause",
-				// start: "start center",
-				markers: true,
-			},
-			x: innerWidth * 1,
-			rotation: 360,
-			duration: 2,
-		});
-	}, [res]);
+	// 	tl.from(".imgLogo", {
+	// 		x: "400",
+	// 		duration: 1,
+	// 		opacity: 1,
+	// 	})
+	// 		.from(
+	// 			".accordion",
+	// 			{
+	// 				duration: 1,
+	// 				opacity: 1,
+	// 			},
+	// 			"<",
+	// 		)
+	// }, [res]);
 
 	return (
 		<>

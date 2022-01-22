@@ -61,8 +61,11 @@ export const Resultado = ({ resultado: res }) => {
 			<div className='container mt-5'>
 				<div className='row box'>
 					<div className='mb-md-5 col-s-12 col-md-8'>
-						<div className='accordion' id='accordionExample'>
-							<Acordion className='accordion-item'>
+						<div
+							className='accordion animate__animated animate__fadeIn'
+							id='accordionExample'
+						>
+							<Acordion className='accordion-item '>
 								<h2 className='accordion-header' id='headingOne'>
 									<Button
 										className='accordion-button collapsed'
@@ -152,7 +155,7 @@ export const Resultado = ({ resultado: res }) => {
 							</Acordion>
 						</div>
 					</div>
-					<div className='imgLogo col text-center'>
+					<div className='imgLogo col text-center animate__animated animate__fadeIn'>
 						<ImgCripto
 							src={"https://www.cryptocompare.com/" + res.IMAGEURL}
 							alt=''
